@@ -1,0 +1,685 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.home,
+.services,
+.logs,
+.sign-up {
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+}
+
+.services {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+}
+
+.logs {
+  background-position: center;
+  background-size: fill;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+}
+
+.sign-up {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+}
+
+/* From React-Main */
+h1 {
+  text-align: center;
+}
+h5 {
+  color: darkslateblue;
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: -14px;
+}
+p {
+  color: dimgray;
+  margin-top: 12px;
+
+  font-weight: bold;
+}
+
+.Card {
+  margin: 12px;
+  padding: 34px;
+  text-align: center;
+
+  min-width: 240px;
+  max-width: 240px;
+  min-height: 240px;
+
+  backdrop-filter: blur(5px);
+  background-color: rgb(245, 245, 255);
+
+  border-radius: 26px;
+  box-shadow: 0px 35px 68px 0px rgba(27, 38, 79, 0.5),
+    inset 0px -8px 16px 0px rgba(27, 38, 79, 0.6),
+    inset 0px 11px 28px 0px rgb(255, 255, 255);
+
+  transform: scale(1);
+  transition: 0.1s ease-out;
+}
+.Card:hover {
+  transform: scale(1.1);
+  transition: 0.1s ease-out;
+  background-color: white;
+}
+.CardCamLid {
+  margin: 12px;
+  padding: 28px;
+  text-align: center;
+
+  width: 700px;
+  height: 540px;
+
+  backdrop-filter: blur(5px);
+  background-color: #ffffff;
+
+  border-radius: 26px;
+  box-shadow: 0px 35px 68px 0px rgba(27, 38, 79, 0.5),
+    inset 0px -8px 16px 0px rgba(27, 38, 79, 0.6),
+    inset 0px 11px 28px 0px rgb(255, 255, 255);
+
+  transform: scale(1);
+  transition: 0.1s ease-out;
+}
+.CardCharts {
+  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 1);
+
+  border-radius: 26px;
+  box-shadow: 0px 35px 68px 0px rgba(27, 38, 79, 0.5),
+    inset 0px -8px 16px 0px rgba(27, 38, 79, 0.6),
+    inset 0px 11px 28px 0px rgb(255, 255, 255);
+}
+.ButtonStop {
+  position: relative;
+  padding: 35px;
+  border-radius: 25px;
+  min-width: 40px;
+  text-align: center;
+
+  backdrop-filter: blur(5px);
+  background-color: #e74c3c;
+  border-radius: 26px;
+  box-shadow: 0px 35px 68px 0px rgba(27, 38, 79, 0.5),
+    inset 0px -8px 16px 0px rgba(27, 38, 79, 0.6),
+    inset 0px 11px 28px 0px #e76b5d;
+}
+.ButtonStart {
+  position: relative;
+  padding: 35px;
+  border-radius: 25px;
+  min-width: 40px;
+  text-align: center;
+
+  backdrop-filter: blur(5px);
+  background-color: #2ecc71;
+
+  border-radius: 26px;
+  box-shadow: 0px 35px 68px 0px rgba(27, 38, 79, 0.5),
+    inset 0px -8px 16px 0px rgba(27, 38, 79, 0.6),
+    inset 0px 11px 28px 0px #5fd891;
+}
+
+.Timer {
+  position: relative;
+  padding: 25px;
+  text-align: center;
+
+  margin: 12px;
+
+  max-width: 250px;
+  min-width: 250px;
+  min-height: 125px;
+
+  backdrop-filter: blur(5px);
+  background-color: rgb(245, 245, 255);
+  border-radius: 26px;
+  box-shadow: 0px 35px 68px 0px rgba(27, 38, 79, 0.5),
+    inset 0px -8px 16px 0px rgba(27, 38, 79, 0.6),
+    inset 0px 11px 28px 0px rgb(255, 255, 255);
+}
+.Timer:hover {
+  background-color: white;
+}
+
+.CardControl {
+  position: relative;
+  padding: 35px;
+  text-align: center;
+
+  margin: 12px;
+
+  backdrop-filter: blur(5px);
+  background-color: rgb(245, 245, 255);
+  border-radius: 26px;
+  box-shadow: 0px 35px 68px 0px rgba(27, 38, 79, 0.5),
+    inset 0px -8px 16px 0px rgba(27, 38, 79, 0.6),
+    inset 0px 11px 28px 0px rgb(255, 255, 255);
+}
+.CardControl:hover {
+  background-color: white;
+}
+
+.CardRoute {
+  padding: 35px;
+  text-align: center;
+
+  margin: 12px;
+
+  backdrop-filter: blur(5px);
+  background-color: rgb(245, 245, 255);
+  border-radius: 26px;
+  box-shadow: 0px 35px 68px 0px rgba(27, 38, 79, 0.5),
+    inset 0px -8px 16px 0px rgba(27, 38, 79, 0.6),
+    inset 0px 11px 28px 0px rgb(255, 255, 255);
+}
+.CardRoute:hover {
+  background-color: white;
+}
+
+.CardMap {
+  padding: 35px;
+  text-align: center;
+
+  margin: 12px;
+
+  backdrop-filter: blur(5px);
+  background-color: rgb(245, 245, 255);
+  border-radius: 26px;
+  box-shadow: 0px 35px 68px 0px rgba(27, 38, 79, 0.5),
+    inset 0px -8px 16px 0px rgba(27, 38, 79, 0.6),
+    inset 0px 11px 28px 0px rgb(255, 255, 255);
+}
+.CardMap:hover {
+  background-color: white;
+}
+
+/* RouteMapButtons */
+.Zone {
+  position: absolute;
+
+  align-items: center;
+  justify-content: center;
+  background-color: #fcfcfd;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+  color: #36395a;
+  cursor: pointer;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+
+  padding-top: 0px;
+  padding-right: 6px;
+  padding-bottom: 3px;
+  padding-left: 6px;
+
+  transition: box-shadow 0.15s, transform 0.15s;
+  will-change: box-shadow, transform;
+  touch-action: manipulation;
+}
+.Zone:hover {
+  padding-top: 1px;
+  padding-right: 7px;
+  padding-bottom: 4px;
+  padding-left: 7px;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+  transform: translateY(-1px);
+}
+.Zone:active {
+  transform: translateY(2px);
+}
+.Direction {
+  position: absolute;
+
+  align-items: center;
+  justify-content: center;
+  background-color: #fcfcfd;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+  color: #36395a;
+  cursor: pointer;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+
+  padding-top: 0px;
+  padding-right: 6px;
+  padding-bottom: 3px;
+  padding-left: 6px;
+
+  transition: box-shadow 0.15s, transform 0.15s;
+  will-change: box-shadow, transform;
+  touch-action: manipulation;
+}
+.Direction:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+  transform: translateY(-1px);
+}
+.Direction:active {
+  transform: translateY(2px);
+}
+.Zone0 {
+  left: -8px;
+  top: -10px;
+}
+.Zone1 {
+  left: 72px;
+  top: -10px;
+}
+.Zone2 {
+  left: 156px;
+  top: -10px;
+}
+.Zone3 {
+  left: 194px;
+  top: -10px;
+  display: none;
+}
+.Zone5 {
+  left: 282px;
+  top: -10px;
+  display: none;
+}
+.Zone6 {
+  left: 322px;
+  top: -10px;
+}
+.Zone7 {
+  left: 404px;
+  top: -10px;
+}
+.Zone8 {
+  left: 486px;
+  top: -10px;
+}
+.Zone9 {
+  left: -8px;
+  top: 240px;
+}
+.Zone10 {
+  left: 68px;
+  top: 240px;
+}
+.Zone11 {
+  left: 150px;
+  top: 240px;
+}
+.Zone12 {
+  left: 192px;
+  top: 240px;
+  display: none;
+}
+.Zone14 {
+  left: 275px;
+  top: 240px;
+  display: none;
+}
+.Zone15 {
+  left: 316px;
+  top: 240px;
+}
+.Zone16 {
+  left: 400px;
+  top: 240px;
+}
+.Zone17 {
+  left: 482px;
+  top: 240px;
+}
+.Zone18 {
+  left: 234px;
+  top: 24px;
+  display: none;
+}
+.Zone19 {
+  display: none;
+  left: 68px;
+  top: 86px;
+}
+.Zone20 {
+  display: none;
+  left: 150px;
+  top: 86px;
+}
+.Zone21 {
+  display: none;
+  left: 316px;
+  top: 86px;
+}
+.Zone22 {
+  display: none;
+  left: 400px;
+  top: 86px;
+}
+.Zone23 {
+  display: none;
+  left: 68px;
+  top: 154px;
+}
+.Zone24 {
+  display: none;
+  left: 150px;
+  top: 154px;
+}
+.Zone25 {
+  display: none;
+  left: 316px;
+  top: 154px;
+}
+.Zone26 {
+  display: none;
+  left: 400px;
+  top: 154px;
+}
+.Zone27 {
+  left: 234px;
+  top: 206px;
+  display: none;
+}
+.ZoneA {
+  top: 117px;
+  left: 69px;
+  width: 30px;
+  height: 30px;
+  background-color: #2ecc71;
+}
+.ZoneB {
+  top: 117px;
+  left: 152px;
+  width: 30px;
+  height: 30px;
+  background-color: #2ecc71;
+}
+.ZoneC {
+  top: 117px;
+  left: 317px;
+  width: 30px;
+  height: 30px;
+  background-color: #2ecc71;
+}
+.ZoneD {
+  top: 117px;
+  left: 400px;
+  width: 30px;
+  height: 30px;
+  background-color: #2ecc71;
+}
+.Start1 {
+  top: -10px;
+  left: 234px;
+  background-color: #e76b5d;
+}
+.Start2 {
+  top: 240px;
+  left: 234px;
+  background-color: #e76b5d;
+}
+/* Logs Page */
+.BackGroundImage {
+  background-image: url('../src/assets/images/logoTransparent25.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+/* Start Map Component Qr Zones */
+
+.Qr {
+  position: absolute;
+  width: 30px;
+
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: #d6d6e7 0 -3px 0 inset;
+
+  font-family: 'PT Sans', sans-serif;
+  font-size: 10px;
+  font-weight: bold;
+
+  padding-top: 1px;
+  padding-right: 4px;
+  padding-bottom: 3px;
+  padding-left: 4px;
+
+  transition: box-shadow 0.15s, transform 0.15s;
+  will-change: box-shadow, transform;
+  touch-action: manipulation;
+}
+.Qr1 {
+  top: 390px;
+  left: 740px;
+}
+.Qr2 {
+  top: 390px;
+  left: 690px;
+}
+.Qr3 {
+  top: 390px;
+  left: 610px;
+}
+.Qr4 {
+  top: 390px;
+  left: 560px;
+}
+.Qr5 {
+  top: 390px;
+  left: 476px;
+}
+.Qr6 {
+  top: 390px;
+  left: 426px;
+}
+.Qr7 {
+  top: 390px;
+  left: 384px;
+}
+.Qr8 {
+  top: 390px;
+  left: 340px;
+}
+.Qr9 {
+  top: 390px;
+  left: 290px;
+}
+.Qr10 {
+  top: 390px;
+  left: 210px;
+}
+.Qr11 {
+  top: 390px;
+  left: 160px;
+}
+.Qr12 {
+  top: 390px;
+  left: 80px;
+}
+.Qr13 {
+  top: 390px;
+  left: 30px;
+}
+.Qr14 {
+  top: 340px;
+  left: -10px;
+}
+.Qr30 {
+  top: 340px;
+  left: 780px;
+}
+.Qr31 {
+  top: 340px;
+  left: 648px;
+}
+.Qr40 {
+  top: 340px;
+  left: 516px;
+}
+.Qr41 {
+  top: 340px;
+  left: 384px;
+}
+.Qr47 {
+  top: 340px;
+  left: 250px;
+}
+.Qr48 {
+  top: 340px;
+  left: 118px;
+}
+.Qr50 {
+  top: 198px;
+  left: 118px;
+}
+.Qr45 {
+  top: 198px;
+  left: 250px;
+}
+.Qr38 {
+  top: 198px;
+  left: 516px;
+}
+.Qr33 {
+  top: 198px;
+  left: 648px;
+}
+.Qr49 {
+  top: 238px;
+  left: 118px;
+}
+.Qr51 {
+  top: 158px;
+  left: 118px;
+}
+.Qr44 {
+  top: 158px;
+  left: 250px;
+}
+.Qr46 {
+  top: 238px;
+  left: 250px;
+}
+.Qr37 {
+  top: 158px;
+  left: 516px;
+}
+.Qr39 {
+  top: 238px;
+  left: 516px;
+}
+.Qr32 {
+  top: 238px;
+  left: 648px;
+}
+.Qr34 {
+  top: 158px;
+  left: 648px;
+}
+.Qr15 {
+  top: 48px;
+  left: -10px;
+}
+.Qr16 {
+  top: -2px;
+  left: 30px;
+}
+.Qr17 {
+  top: -2px;
+  left: 80px;
+}
+.Qr18 {
+  top: -2px;
+  left: 160px;
+}
+.Qr19 {
+  top: -2px;
+  left: 210px;
+}
+.Qr20 {
+  top: -2px;
+  left: 290px;
+}
+.Qr21 {
+  top: -2px;
+  left: 340px;
+}
+.Qr22 {
+  top: -2px;
+  left: 384px;
+}
+.Qr23 {
+  top: -2px;
+  left: 426px;
+}
+.Qr24 {
+  top: -2px;
+  left: 476px;
+}
+.Qr25 {
+  top: -2px;
+  left: 560px;
+}
+.Qr26 {
+  top: -2px;
+  left: 610px;
+}
+.Qr27 {
+  top: -2px;
+  left: 690px;
+}
+.Qr28 {
+  top: -2px;
+  left: 740px;
+}
+.Qr29 {
+  top: 48px;
+  left: 780px;
+}
+.Qr52 {
+  top: 48px;
+  left: 118px;
+}
+.Qr43 {
+  top: 48px;
+  left: 250px;
+}
+.Qr42 {
+  top: 48px;
+  left: 384px;
+}
+.Qr36 {
+  top: 48px;
+  left: 516px;
+}
+.Qr35 {
+  top: 48px;
+  left: 648px;
+}
+/* End Map Component Qr Zones */ ;
